@@ -56,6 +56,15 @@ hr {
 .number-selected {
     background-color: rgb(173, 173, 173);
 }
+.tile-start{
+    background-color: whitesmoke;
+}
+.h-line {
+    border-bottom: 1px solid #212529;
+}
+.v-line{
+    border-right: 1px solid #212529;
+}
 @media (max-width: 768px) {
     hr {
         width: 350px;

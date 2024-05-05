@@ -49,6 +49,19 @@ function setGame(){
         for(let k = 0; k < 9; k++){
             let tile = document.createElement("div");
             tile.id = j.toString() + "-" + k.toString();
+            //adding the numbers in its tiles
+            if(board[j][k] != "-"){
+                tile.innerText = board[j][k];
+                tile.classList.add("tile-start");
+            }
+            //adding the line seperator between each 3x3 border
+            if(j == 2 || j == 5){
+                tile.classList.add("v-line");
+            }
+            if(k == 2 || k == 5){
+                tile.classList.add("h-line");
+            }
+            tile.addEventListener("click", selectedTile);
             tile.classList.add("tile");
             document.getElementById("board").append(tile);
         }
@@ -63,4 +76,22 @@ function selectNumber(){
     //this refers to the div itself.
     numberSelected = this;
     numberSelected.classList.add("number-selected");
+}
+function selectedTile(){
+    if(numberSelected){
+        if(this.innerText != ""){
+            return;
+        }
+        let coords = this.id.split("-");
+        let r = parseInt(coords[0]);
+        let c = parseInt(coords[1]);
+
+        if(solution[r][c] == numberSelected.id){
+            this.innerText = numberSelected.id;
+        }
+        else{
+            errors += 1;
+            document.getElementById("errors").innerText = errors;
+        }
+    }
 }
