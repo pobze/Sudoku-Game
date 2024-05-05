@@ -1,27 +1,4 @@
 body{
-    height: 100vb;
+    text-align: center;
     background-color: #f0f0f0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.game {
-    width: 600px;
-    height: 600px;
-    border: 1px solid black;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-}
-.game_section{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    background-color: #ffff;
-    border: 1px solid rgba(0, 0, 0, 0.808)
-}
-.game_inner_section{
-    background-color: #ffff;
-    border: 1px solid rgba(0, 0, 0, 0.829)
 }
