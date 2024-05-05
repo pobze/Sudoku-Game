@@ -66,7 +66,6 @@ hr {
     }
     #digits {
         width: 335px;
-        height: 335px;
     }
     .number{
         width: 35px;
@@ -74,5 +73,11 @@ hr {
         margin: 1px;
         font-size: 15px;
     }
+    .tile{
+        width: 37px;
+        height: 37px;
+    }
+    p{
+        font-size: 12px;
+    }
 }
-/* dont forget fixing the board tiles */
