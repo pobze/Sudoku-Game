@@ -92,24 +92,6 @@ function selectedTile(){
         else{
             errors += 1;
             document.getElementById("errors").innerText = errors;
-            if (errors >= 10) {
-                // Display popup message
-                alert("You have missed 10 times. Game will restart.");
-                // Reset the game
-                resetGame();
-            }
         }
     }
-}
-//resiting the game
-function resetGame(){
-    numberSelected = null;
-    errors = 0;
-    document.getElementById("errors").innerText = errors;
-
-    // Clear board
-    document.getElementById("board").innerHTML = "";
-
-    // Set the game again
-    setGame();
 }
