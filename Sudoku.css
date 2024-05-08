@@ -2,7 +2,6 @@ body{
     background-color: #f0f0f0;
 }
 .content{
-    margin-top: 10rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -66,6 +65,9 @@ hr {
     border-right: 1px solid #212529;
 }
 @media (max-width: 768px) {
+    .content{
+        margin-top: 10rem;
+    }
     hr {
         width: 350px;
     }
