@@ -2,7 +2,7 @@ body{
     background-color: #f0f0f0;
 }
 .content{
-    /* height: 100vb; */
+    height: 100vb;
     display: flex;
     flex-direction: column;
     justify-content: center;
