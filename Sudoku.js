@@ -1,9 +1,9 @@
 "strict mode"
-var numberSelected = null;
-var  tileSelected = null;
-var errors = 0;
+let numberSelected = null;
+let  tileSelected = null;
+let errors = 0;
 
-var board = [
+let board = [
     "--65----8",
     "-95----2-",
     "7--9--3--",
@@ -15,7 +15,7 @@ var board = [
     "3----54--"
 ]
 
-var solution = [
+let solution = [
     "136524798",
     "895367124",
     "724981356",
