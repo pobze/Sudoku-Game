@@ -67,6 +67,19 @@ hr {
 .v-line{
     border-right: 1px solid #212529;
 }
+#blank-screen{
+    display: none;
+    width: 500px;
+    height: 450px;
+    border-radius: 12px;
+    background-color: #f0f0f0;
+    z-index: 1;
+
+}
+#blank-screen a{
+    color: white;
+    text-decoration: none;
+}
 @media (max-width: 768px) {
     hr {
         width: 350px;
