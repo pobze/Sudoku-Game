@@ -89,11 +89,11 @@ function selectedTile(){
         if(solution[r][c] == numberSelected.id){
             this.innerText = numberSelected.id;
         }
-        if(errors >= 9){
-            let main = document.getElementById("main-content");
+        else if(errors >= 9){
+           let main = document.getElementById("main-content");
            let lose = document.getElementById("blank-screen");
            lose.style.display = "flex";
-           lose.style.justifyContent = "center";
+           lose.style.justifyContent = "center";  
            lose.style.alignItems = "center";
            main.style.display = "none";
         }
